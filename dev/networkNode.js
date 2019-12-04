@@ -15,6 +15,7 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.disable("x-powered-by");
 
 app.get("/blockchain", function(req, res) {
   res.send(bitcoin);
