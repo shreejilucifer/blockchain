@@ -250,6 +250,8 @@ app.get("/consensus", function(req, res) {
   });
 });
 
+// TODO Web API
+
 app.listen(port, function() {
   console.log(`Listening on Port ${port}...`);
 });
